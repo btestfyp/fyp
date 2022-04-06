@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 import os
 from datetime import timedelta
 from pathlib import Path
-import django_on_heroku
+# import django_on_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -195,4 +195,5 @@ CORS_ALLOW_ALL_ORIGINS = True
 if os.getcwd() == '/app':
     DEBUG = False
 
+import django_on_heroku
 django_on_heroku.settings(locals())
